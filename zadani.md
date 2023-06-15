@@ -55,13 +55,12 @@ gantt
 * fotorezistor
 
 Možnost postavit na předpřipraveném shield
-![](soubory/protoShield.jpg)
-![](soubory/terminalShield.jpg)
+![protoShield](soubory/protoShield.jpg)
+![terminalShield](soubory/terminalShield.jpg)
 
 ## Dokumentace
 * GIT repo
-  * desky
-    * složky pro jednotlivé desky 1.-4.
+  * shield
       * průvodní dokument - vypracovaný ze vzoru
       * Fritzing
         * zdroj
