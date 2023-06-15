@@ -6,7 +6,7 @@ Motivace - v 4r se budeme zabývat zejména datovými toky, tedy si připravíme
 ## Termíny
 | milník | termín | týdnů |
 |:- | :- | -:|
-| Zadání | **19.6.-23.6.**| 0 |
+| Zadání | **19.6.-23.6.**  | 0 |
 | repo + Dokumentace v1 | **18.9.-22.9.** | 13 |
 | Vytvořený produkt + dokumentace v2 | **25.9.-29.9.** | 14 |
 | Termín prezentace | **2.10.-6.10.** | 15 |
@@ -17,14 +17,14 @@ gantt
     title Milníky projektu
     dateFormat  YYYY-MM-DD
     section Zadání
-    Zadání           :a1, 2023-06-19, 5d
+    Zadání                    :a1, 2023-06-19, 5d
     section Dokumentace
     Dokumentace v1 + repo     :a2, 2023-09-18, 5d
-    Dokumentace v2  :a3, 2023-09-25, 5d
+    Dokumentace v2            :a3, 2023-09-25, 5d
     section Vytvoření produktu
     Vytvoření produktu + video :a4, 2023-09-25, 5d
     section Prezentace
-    Prezentace       :a5, 2023-10-02, 5d
+    Prezentace                :a5, 2023-10-02, 5d
 ```
 
 ## Minimální požadavky
@@ -65,7 +65,7 @@ Možnost postavit na předpřipraveném shield
       * Fritzing
         * zdroj
         * obrázek
-      * elektrotechnický nákres
+      * elektrotechnické schéma
       * fotky modulů
         * celkový
         * detaily
