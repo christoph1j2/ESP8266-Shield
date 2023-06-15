@@ -1,6 +1,6 @@
-# 4R - Projekt - Vlastní desky/shield
+# 4R - Projekt - Vlastní shield
 
-vzorové repo pro projekt - vlastní desky/shield pro ESP (Wemos D1 R1/R2, ...)
+vzorové repo pro projekt - vlastní shield pro ESP (Wemos D1 R1/R2, ...)
 
 > **_začněte naklonováním tohoto repozitáře_**
 

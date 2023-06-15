@@ -51,7 +51,7 @@ gantt
   * pro nastavení PWM/procházení menu
   * <img src = "https://gitlab.spseplzen.cz/haut/4r-vlastni-desky/-/raw/Concept/soubory/encoder.jpg" alt = "encoder" width = "300px">
 * DS18B20 čidlo kabel
-  * <img src = "https://gitlab.spseplzen.cz/haut/4r-vlastni-desky/-/raw/Concept/soubory/ws2812.jpg" alt = "ds18b20" width = "300px">
+  * <img src = "https://gitlab.spseplzen.cz/haut/4r-vlastni-desky/-/raw/Concept/soubory/ds18b20.jpg" alt = "ds18b20" width = "300px">
 * fotorezistor
 
 Možnost postavit na předpřipraveném shield
