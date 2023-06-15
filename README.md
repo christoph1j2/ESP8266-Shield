@@ -10,6 +10,8 @@ vzorové repo pro projekt - vlastní desky/shield pro ESP (Wemos D1 R1/R2, ...)
 * **zadani.md**
   * přehled zadání a minimálního rozsahu
 * **otazky_prezentace.md**
+* **dokumentace/schéma/**
+  * elektrotechnické schéma zapojení
 * **dokumentace/design/**
   * místo pro návrhy a vizualizace
 * **dokumentace/fotky/**
@@ -21,3 +23,5 @@ vzorové repo pro projekt - vlastní desky/shield pro ESP (Wemos D1 R1/R2, ...)
   * nasdílejte kompletní zdrojové kódy umožňující nahrání a spuštění projektu
 * **zdrojove_kody/knihovny/**
   * nasdílejte potřebné knihovny
+* **soubory**
+  * náhledy modulů

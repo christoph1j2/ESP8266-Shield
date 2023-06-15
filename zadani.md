@@ -1,17 +1,15 @@
 # Vlastní desky/shield
-## Zadání: Rozmyslete, navrhněte, vytvořte, otestujte a vytvořte dokumentaci k vlastním deskám
+**Zadání: Rozmyslete, navrhněte, vytvořte, otestujte a vytvořte dokumentaci k vlastnímu shield**
 
-Možné situace:
-* vlastní desky s integrovanými čidly/akčními členy
-* shield pro ESP (Wemos D1 R1/R2, ...)
+Motivace - v 4r se budeme zabývat zejména datovými toky, tedy si připravíme shield ke zjednodušení načítání/indikaci dat.
 
 ## Termíny
 | milník | termín | týdnů |
 |:- | :- | -:|
 | Zadání | **19.6.-23.6.**| 0 |
-| Dokumentace + repo v1 | **18.9.-22.9.** |  |
-| Vytvořený produkt + dokumentace v2 | **25.9.-29.9.** |  |
-| Termín prezentace | **2.10.-6.10.** |  |
+| repo + Dokumentace v1 | **18.9.-22.9.** | 13 |
+| Vytvořený produkt + dokumentace v2 | **25.9.-29.9.** | 14 |
+| Termín prezentace | **2.10.-6.10.** | 15 |
 
 ### Ganttův diagram postupu
 ```mermaid
@@ -21,33 +19,44 @@ gantt
     section Zadání
     Zadání           :a1, 2023-06-19, 5d
     section Dokumentace
-    Dokumentace v1   :a2, 2023-09-18, 5d
-    Dokumentace v2   :a3, 2023-09-25, 5d
+    Dokumentace v1 + repo     :a2, 2023-09-18, 5d
+    Dokumentace v2  :a3, 2023-09-25, 5d
     section Vytvoření produktu
-    Vytvoření produktu :a4, 2023-10-02, 5d
+    Vytvoření produktu + video :a4, 2023-09-25, 5d
     section Prezentace
-    Prezentace       :a5, 2023-10-09, 5d
+    Prezentace       :a5, 2023-10-02, 5d
 ```
 
 ## Minimální požadavky
-* vytvoření 4 desek, nebo shieldu pro ESP
-* vytvoření dokumentace
-  * popis vlastností
+* vytvoření shieldu pro ESP (Wemos D1 R1/R2)
+* **vytvoření dokumentace - podle vzoru**
+  * dodržení formálních požadavků na dokumentaci
+  * popis vlastností shieldu
   * zapojení
     * Fritzing
     * schéma
-  * ukázkový kód
+  * ukázkový kód - modulární
 * vhodný vlastní reprezentativní design
 
-## Funkčnost desek
-* deska 1
-  * 1x analogový vstup
-  * 1x analogový výstup
-  * 1x digitální vstup
-  * 1x digitální výstup
-* deska 2
-* deska 3
-* deska 4
+## Funkčnost shield
+* indikátor stavu
+  * varianty
+    * RG / RB LEDs
+    * RYG LEDs semafor
+* min. 2 x RGB
+  * varianty
+    * ARGB pásek WS2812 nebo obdobný ![WS2812](soubory/ws2812.jpg) 
+    * RGB LED součástky
+* enkodér
+  * pro nastavení PWM/procházení menu
+  * ![encoder](soubory/encoder.jpg)
+* DS18B20 čidlo kabel
+  * ![DS18B20](soubory/ds18b20.jpg)
+* fotorezistor
+
+Možnost postavit na předpřipraveném shield
+![](soubory/protoShield.jpg)
+![](soubory/terminalShield.jpg)
 
 ## Dokumentace
 * GIT repo
@@ -65,7 +74,7 @@ gantt
         * (knihovna)
     * **odzdrojovat převzaté části**
   * fotky
-    * minimálně 2 fotky každého produktu
+    * minimálně 5 fotek zapojení jednotlivých částí
     * z toho alespoň jedna fotka kompletního produktu
   * video
     * vložené video/odkaz na video
