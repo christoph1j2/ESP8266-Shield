@@ -7,9 +7,9 @@ Motivace - v 4r se budeme zabývat zejména datovými toky, tedy si připravíme
 | milník | termín | týdnů |
 |:- | :- | -:|
 | Zadání | **19.6.-23.6.**  | 0 |
-| repo + Dokumentace v1 | **18.9.-22.9.** | 13 |
-| Vytvořený produkt + dokumentace v2 | **25.9.-29.9.** | 14 |
-| Termín prezentace | **2.10.-6.10.** | 15 |
+| Dokumentace v1 + repo | **18.9.-22.9.** | 13 |
+| Vytvořený produkt | **25.9.-29.9.** | 14 |
+| Termín prezentace + dokumentace v2 | **2.10.-6.10.** | 15 |
 
 ### Ganttův diagram postupu
 ```mermaid
@@ -20,7 +20,7 @@ gantt
     Zadání                    :a1, 2023-06-19, 5d
     section Dokumentace
     Dokumentace v1 + repo     :a2, 2023-09-18, 5d
-    Dokumentace v2            :a3, 2023-09-25, 5d
+    Dokumentace v2            :a3, 2023-10-02, 5d
     section Vytvoření produktu
     Vytvoření produktu + video :a4, 2023-09-25, 5d
     section Prezentace
@@ -45,18 +45,18 @@ gantt
     * RYG LEDs semafor
 * min. 2 x RGB
   * varianty
-    * ARGB pásek WS2812 nebo obdobný ![WS2812](soubory/ws2812.jpg) 
+    * ARGB pásek WS2812 nebo obdobný <img src = "https://gitlab.spseplzen.cz/haut/4r-vlastni-desky/-/blob/Concept/soubory/ws2812.jpg" alt = "WS2812" width = "300px">
     * RGB LED součástky
 * enkodér
   * pro nastavení PWM/procházení menu
-  * ![encoder](soubory/encoder.jpg)
+  * <img src = "https://gitlab.spseplzen.cz/haut/4r-vlastni-desky/-/blob/Concept/soubory/encoder.jpg" alt = "encoder" width = "300px">
 * DS18B20 čidlo kabel
-  * ![DS18B20](soubory/ds18b20.jpg)
+  * <img src = "https://gitlab.spseplzen.cz/haut/4r-vlastni-desky/-/blob/Concept/soubory/ws2812.jpg" alt = "ds18b20" width = "300px">
 * fotorezistor
 
 Možnost postavit na předpřipraveném shield
-![protoShield](soubory/protoShield.jpg)
-![terminalShield](soubory/terminalShield.jpg)
+* <img src = "https://gitlab.spseplzen.cz/haut/4r-vlastni-desky/-/blob/Concept/soubory/protoShield.jpg" alt = "protoShield" width = "300px">
+* <img src = "https://gitlab.spseplzen.cz/haut/4r-vlastni-desky/-/blob/Concept/soubory/terminalShield.jpg" alt = "terminalShield" width = "300px">
 
 ## Dokumentace
 * GIT repo
