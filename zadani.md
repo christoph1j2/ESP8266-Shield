@@ -45,18 +45,18 @@ gantt
     * RYG LEDs semafor
 * min. 2 x RGB
   * varianty
-    * ARGB pásek WS2812 nebo obdobný <img src = "https://gitlab.spseplzen.cz/haut/4r-vlastni-desky/-/blob/Concept/soubory/ws2812.jpg" alt = "WS2812" width = "300px">
+    * ARGB pásek WS2812 nebo obdobný <img src = "https://gitlab.spseplzen.cz/haut/4r-vlastni-desky/-/raw/Concept/soubory/ws2812.jpg" alt = "WS2812" width = "300px">
     * RGB LED součástky
 * enkodér
   * pro nastavení PWM/procházení menu
-  * <img src = "https://gitlab.spseplzen.cz/haut/4r-vlastni-desky/-/blob/Concept/soubory/encoder.jpg" alt = "encoder" width = "300px">
+  * <img src = "https://gitlab.spseplzen.cz/haut/4r-vlastni-desky/-/raw/Concept/soubory/encoder.jpg" alt = "encoder" width = "300px">
 * DS18B20 čidlo kabel
-  * <img src = "https://gitlab.spseplzen.cz/haut/4r-vlastni-desky/-/blob/Concept/soubory/ws2812.jpg" alt = "ds18b20" width = "300px">
+  * <img src = "https://gitlab.spseplzen.cz/haut/4r-vlastni-desky/-/raw/Concept/soubory/ws2812.jpg" alt = "ds18b20" width = "300px">
 * fotorezistor
 
 Možnost postavit na předpřipraveném shield
-* <img src = "https://gitlab.spseplzen.cz/haut/4r-vlastni-desky/-/blob/Concept/soubory/protoShield.jpg" alt = "protoShield" width = "300px">
-* <img src = "https://gitlab.spseplzen.cz/haut/4r-vlastni-desky/-/blob/Concept/soubory/terminalShield.jpg" alt = "terminalShield" width = "300px">
+* <img src = "https://gitlab.spseplzen.cz/haut/4r-vlastni-desky/-/raw/Concept/soubory/protoShield.jpg" alt = "protoShield" width = "300px">
+* <img src = "https://gitlab.spseplzen.cz/haut/4r-vlastni-desky/-/raw/Concept/soubory/terminalShield.jpg" alt = "terminalShield" width = "300px">
 
 ## Dokumentace
 * GIT repo
