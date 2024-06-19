@@ -22,15 +22,9 @@ gantt
     Dokumentace v1 + repo     :a2, 2023-09-17, 5d
     Dokumentace v2            :a3, 2023-09-30, 5d
     section Vytvoření produktu
-<<<<<<< HEAD
-    Vytvoření produktu + video :a4, 2023-09-23, 5d
+    Vytvoření produktu        :a4, 2023-09-23, 5d
     section Prezentace
-    Prezentace                :a5, 2023-09-30, 5d
-=======
-    Vytvoření produktu        :a4, 2023-09-25, 5d
-    section Prezentace
-    Prezentace + video        :a5, 2023-10-02, 5d
->>>>>>> 9805c12e3ded46d6e68ba052091f70baea32969b
+    Prezentace + video        :a5, 2023-09-30, 5d
 ```
 
 ## Minimální požadavky
