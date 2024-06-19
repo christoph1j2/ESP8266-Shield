@@ -19,12 +19,12 @@ gantt
     section Zadání
     Zadání                    :a1, 2024-06-19, 5d
     section Dokumentace
-    Dokumentace v1 + repo     :a2, 2023-09-17, 5d
-    Dokumentace v2            :a3, 2023-09-30, 5d
+    Dokumentace v1 + repo     :a2, 2024-09-17, 5d
+    Dokumentace v2            :a3, 2024-09-30, 5d
     section Vytvoření produktu
-    Vytvoření produktu        :a4, 2023-09-23, 5d
+    Vytvoření produktu        :a4, 2024-09-23, 5d
     section Prezentace
-    Prezentace + video        :a5, 2023-09-30, 5d
+    Prezentace + video        :a5, 2024-09-30, 5d
 ```
 
 ## Minimální požadavky
