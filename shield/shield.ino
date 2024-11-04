@@ -1,5 +1,14 @@
 #include "LeschkaShield.h"
 
+//mqtt
+WiFiClient espClient;
+const char* ssid = "3301-IoT";
+const char* password = "mikrobus";
+const char* mqtt_server = "10.202.31.211";
+PubSubClient client(espClient);
+unsigned long lastMsg = 0;
+#define MSG_INTERVAL 2000
+
 void buttonPress(bool& inMenu, int& menuIndex){
     Serial.println("Button pressed");
     inMenu = !inMenu;
@@ -79,19 +88,49 @@ void setup() {
   setupButton();
   setupLEDStrip();
   setupTemperatureSensor();
+
+  // mqtt
+  setup_wifi();
+  client.setServer(mqtt_server, 1883);
+  client.setCallback(callback);
 }
 
 void loop() {
   static int menuIndex = 0;
   static bool inMenu = true;
 
+  // Zajištění připojení k MQTT brokeru
+  if (!client.connected()) {
+    reconnect();
+  }
+  client.loop();
+
+  // Ovládání menu
   if (readButton()) {
-    buttonPress(inMenu,menuIndex);
+    buttonPress(inMenu, menuIndex);
   }
 
   if (inMenu) {
     displayMenu(menuIndex);
   } else {
     menuSelection(menuIndex);
+  }
+
+  // Odesílání teploty a LDR hodnoty
+  unsigned long now = millis();
+  if (now - lastMsg > MSG_INTERVAL) {
+    lastMsg = now;
+    
+    // Odeslání hodnoty LDR
+    char lightMsg[50];
+    snprintf(lightMsg, 50, "%ld", readLDR());
+    client.publish("4hs2/leschkae/ESP/ldr", lightMsg);
+
+    // Odeslání hodnoty teploty
+    char tempMsg[50];
+    snprintf(tempMsg, 50, "%.2f", readTemperature());
+    client.publish("4hs2/leschkae/ESP/temp", tempMsg);
+
+    Serial.println("Data odeslána na MQTT server.");
   }
 }

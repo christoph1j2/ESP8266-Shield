@@ -8,6 +8,9 @@
 #include <OneWire.h>
 #include <DallasTemperature.h>
 
+#include <ESP8266WiFi.h>
+#include <PubSubClient.h>
+
 // Konstanty
 #define STATUS_LED_PIN1 D8
 #define STATUS_LED_PIN2 D3
@@ -19,11 +22,18 @@
 #define BUTTON_PIN D5
 #define LDR_PIN A0
 
+extern const char* ssid;
+extern const char* password;
+extern const char* mqtt_server;
+
 // Inicializace objektů
 extern LiquidCrystal_I2C lcd;
 extern Adafruit_NeoPixel strip;
 extern OneWire oneWire;
 extern DallasTemperature sensors;
+
+extern WiFiClient espClient;
+extern PubSubClient client;
 
 // deklarace funkcí
 void setupStatusLEDs();
@@ -39,6 +49,10 @@ float readTemperature();
 void setupButton();
 bool readButton();
 int readLDR();
+
+void setup_wifi();
+void reconnect();
+void callback(char* topic, byte* payload, unsigned int length);
 
 #endif
 

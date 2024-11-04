@@ -130,3 +130,74 @@ bool readButton() {
 int readLDR() {
   return analogRead(LDR_PIN);
 }
+
+// MQTT
+
+/* ssid = "3301-IoT";
+password = "mikrobus";
+mqtt_server = "10.202.31.211"; */
+
+void setup_wifi(){
+  delay(10);
+
+  // Připojení k WiFi
+  Serial.println();
+  Serial.print("Připojování k ");
+  Serial.println(ssid);
+
+  WiFi.mode(WIFI_STA);
+  WiFi.begin(ssid, password);
+
+  while (WiFi.status() != WL_CONNECTED){
+    delay(500);
+    Serial.println(".");
+  }
+
+  randomSeed(micros());
+
+  Serial.println("");
+  Serial.println("WiFi connected");
+  Serial.println("IP Address: ");
+  Serial.println(WiFi.localIP());
+}
+
+void reconnect() {
+  // loop než se znovupřipojení zdaří
+  while(!client.connected()){
+    Serial.print("Pokus o MQTT připojení...");
+    //náhodný clientID
+    String clientId = "ESP8266Client-";
+    clientId += String(random(0xfff), HEX);
+    //pokus o připojení
+    if(client.connect(clientId.c_str())){
+      Serial.println("connected");
+      //po připojení vydat announcement
+      client.publish("4hs2/laces/ESP", "hello world");
+      //...a znovu subscribnout
+      //???
+      client.subscribe("4hs2/laces/ESP/LED");
+    } else {
+      Serial.print("failed, rc=");
+      Serial.print(client.state());
+      Serial.println(" zkus to znova za 5 vterin");
+      delay(5000);
+    }
+  }
+}
+
+void callback(char* topic, byte* payload, unsigned int length){
+  Serial.print("Zpráva přišla [");
+  Serial.print(topic);
+  Serial.print("] ");
+  for(int i = 0; i<length;i++){
+    Serial.print((char)payload[i]);
+  }
+  Serial.println();
+
+  if((char)payload[0]=='1'){
+    digitalWrite(BUILTIN_LED,LOW);
+  }
+  else {
+    digitalWrite(BUILTIN_LED,HIGH);
+  }
+}
