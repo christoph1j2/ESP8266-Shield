@@ -146,11 +146,6 @@ This project is available for educational and commercial use. Please refer to in
 
 ## 📸 Gallery
 
-### Completed Project
-- [Assembly Photo 1](dokumentace/fotky/20240805_180028.jpg) - Detailed view of the completed shield
-- [Assembly Photo 2](dokumentace/fotky/20240805_180036.jpg) - Alternative angle showing component placement
-- [Project Overview](dokumentace/fotky/Snapchat-1074486183.jpg) - Full system demonstration
-
 ### Component References
 The `/soubory/` directory contains reference images for all major components including wiring diagrams for the I2C LCD display, DS18B20 temperature sensor, and component specifications for the encoder, WS2812 LED strip, and shield options.
 
